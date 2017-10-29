@@ -2,6 +2,9 @@ div.title{
     font-size: 300px;
     color: #CDCDCE;
 }
+.title img{
+        max-width: 475px;
+}
 input[type=submit]{
     width:65px;
     border:0px;
@@ -9,8 +12,22 @@ input[type=submit]{
     background: transparent !important;
 	font-family: "Lucida Console";
 }
+a{
+	width:65px;
+        border:0px;
+        color: #CDCDCE;
+        background: transparent !important;
+        font-family: "Lucida Console";
+	font-size: 11px; 
+}
+form{
+        float:center;
+}
 body{
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center;
+}
+input[type=button]:focus,input[type=submit]:focus{
+    outline:0px;
 }
