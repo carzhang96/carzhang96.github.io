@@ -1,4 +1,8 @@
-div{
+div.title{
+    font-size: 300px;
+    color: #CDCDCE;
+}
+body{
     background-attachment;
     background-repeat: no-repeat;
     background-position: center;
