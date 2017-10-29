@@ -25,9 +25,9 @@ form{
 }
 body{
     background-attachment: fixed;
+	background-size: 20px 20px
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 80px 60px
 }
 input[type=button]:focus,input[type=submit]:focus{
     outline:0px;
