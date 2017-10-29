@@ -3,14 +3,14 @@ div.title{
     color: #CDCDCE;
 }
 input[type=submit]{
-        width:65px;
-        border:0px;
-        color: #CDCDCE;
-        background: transparent !important;
-	    font-family: "Lucida Console";
+    width:65px;
+    border:0px;
+    color: #CDCDCE;
+    background: transparent !important;
+	font-family: "Lucida Console";
 }
 body{
-    background-attachment;
+    background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center;
 }
