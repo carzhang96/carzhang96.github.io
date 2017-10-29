@@ -9,3 +9,7 @@ body{
     background-position: center;
 }
 
+<img class="mySlides" src="DSCF3194(2).jpg">
+<img class="mySlides" src="Guatemala.jpg">
+<button class="w3-button w3-displlay-left" onclick="plusDivs(-1)">&#10094;</button>
+<button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
