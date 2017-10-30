@@ -8,7 +8,7 @@ body{
     background-repeat: no-repeat;
     background-position: center;
 }
-slideshow, img{
+.slideshow, img{
 	width:100%;
 	height:100%;
 }
