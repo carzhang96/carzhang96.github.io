@@ -3,20 +3,58 @@
       <head>
 	      <title>CZArch</title>
 	      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	      <link rel="styelsheet" href="index.css">
+	      <link rel="stylesheet" href="index.css">
 	      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
       </head>
-      
+      <style>
+      body { 
+  		background: url('DSCF3194.JPG') no-repeat center center fixed; 
+  		background-size: cover;
+		}
+		h1 { 
+  		position: relative;  
+   		margin-left: 5vw; 
+   		margin-top: 3vh;
+   		width: 100%; 
+   		color: white;
+		font-size: 5vw;
+		font-family: Verdana;
+		font-weight: bold;
+		}
+		button{
+			margin-left: 1vw;
+			margin-right: 1vw;
+		}
+		.cv{
+			position: relative;
+			left: 95vw;
+			top: 3vh;
+			font-family: Verdana;
+			color: white;
+			text-decoration: none;
+			font-size: 1.5vw;
+		}
+		.about{
+			position: relative;
+			left: 85vw;
+			top: 3vh;
+			font-family: Verdana;
+			color: white;
+			text-decoration: none;
+			font-size: 1.5vw;
+		}
+	  </style>
       <body>
-	      <div class="w3-content w3-display-container">
-		      <!--<h1 class="w3-display-topleft">Caroline Zhang Architecture</h1>-->
-		      <img class="mySlides" src="DSCF3195 (2).jpg" style="width:100%; height:100%">
-		      <img class="mySlides" src="Guatemala.jpg" style="width:100%">
-			
-		      <button class="w3-button w3-grey w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-		      <button class="w3-button w3-grey w3-display-right" onclick="plusDivs(1)">&#10095;</button>
-	      </div>
+	      <div class="imgDiv">
+	      	<h1 class="w3-display-topleft">CZArch</h1>
+
+	      	<button class="w3-circle w3-transparent w3-border-0 w3-hover-light-gray w3-hover-opacity w3-large w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+		    <button class="w3-circle w3-transparent w3-border-0 w3-hover-light-gray w3-hover-opacity w3-large w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+	 	 </div>
 	      
+	      	<a href="./CV/CV.html" class="cv">C.V.</a>
+	      	<a href="./About/index.html" class="about">About</a>
+
 	      <script>
 		      var slideIndex = 1;
 		      showDivs(slideIndex);
@@ -26,19 +64,17 @@
 		      }
 		      
 		      function showDivs(n){
-			      var i;
-			      var x = document.getElementsByClassName("mySlides");
-			      if (n > x.length){
-				      slideIndex = 1
-			      }
-			      if (n < 1){
-				      slideIndex = x.length
-			      }
-			      for (i = 0; i < x.length; i++){
-				      x[i].style.display = "none";
-			      }
-			      x[slideIndex-1].style.display = "block";
-		      }
+			    if (n > 6){ slideIndex = 1 }
+			     if (n < 1){ slideIndex = 6 }
+			  	 var bodyElm = document.getElementsByTagName("body")[0];
+			  	if (slideIndex == 1) {bodyElm.style.backgroundImage = "url('DSCF3194.JPG')";}
+			  	else if (slideIndex == 2) {bodyElm.style.backgroundImage = "url('IMG_6389 (2).JPG')";}
+			  	else if (slideIndex == 3) {bodyElm.style.backgroundImage = "url('render1.png')";}
+			  	else if (slideIndex == 4) {bodyElm.style.backgroundImage = "url('Guatemala.JPG')";}
+			  	else if (slideIndex == 5) {bodyElm.style.backgroundImage= "url('BeFunky Collage.JPG')";}
+			  	else if (slideIndex == 6) {bodyElm.style.backgroundImage = "url('BeFunky Collage 2.JPG')";}
+			  	
+			  }
 	      </script>
       </body>
 </html>
